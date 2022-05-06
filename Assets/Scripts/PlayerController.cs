@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class PlayerController : PersonWithSword
+public class PlayerController : PersonWithSword // INHERITANCE
 {
-    override protected void Update()
+    override protected void Update() // POLYMORPHISM
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");

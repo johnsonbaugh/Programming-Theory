@@ -17,7 +17,7 @@ public class PersonWithSword : MonoBehaviour
     private float lowerBound = -10.0f;
     private Vector3 startPos;
 
-    public MotionState motionState { get; private set; }
+    public MotionState motionState { get; private set; } // ENCAPSULATION
 
     public enum MotionState
     {
@@ -91,7 +91,7 @@ public class PersonWithSword : MonoBehaviour
         motionState = MotionState.Normal;
     }
 
-    IEnumerator SwingMotion(float duration, int degrees)
+    IEnumerator SwingMotion(float duration, int degrees) // ABSTRACTION
     {
         Transform swordTransform = swordArm.transform;
         float startRotation = swordTransform.eulerAngles.x;

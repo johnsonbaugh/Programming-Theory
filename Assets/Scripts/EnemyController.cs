@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : PersonWithSword
+public class EnemyController : PersonWithSword // INHERITANCE
 {
     [SerializeField] public PersonWithSword target;
 
     private float attackDistance = 1.0f;
 
-    // Update is called once per frame
-    override protected void Update()
+    override protected void Update() // POLYMORPHISM
     {
         if (motionState == MotionState.Normal)
         {
